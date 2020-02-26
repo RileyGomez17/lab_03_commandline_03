@@ -66,13 +66,20 @@ drwxr-xr-x@ 7 student  staff  238 Feb 25 19:27 ..
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
 
+cp bar.txt baz.txt
 
+bar.txt	baz.txt	foo.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+rm bar.txt
+
+baz.txt	foo.txt
+
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
@@ -80,7 +87,9 @@ Write the command that you used to remove the file.  Copy and paste the output o
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
 
+mv foo.txt qux.txt
 
+baz.txt	qux.txt
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
@@ -94,8 +103,9 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
+rmdir my_files
 
-
+rmdir: my_files: Directory not empty
 
 ==========
 14. Try removing the directory called my_files using rm.
@@ -103,7 +113,8 @@ Write out the command that you used and what happened.
 Write out the command that you used and what happened.
 ----------
 
-
+rm my_files
+rm: my_files: is a directory
 
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
@@ -113,6 +124,7 @@ Force the removal of the directory and files using the -rf flag
 $ rm -rf my_files
 ----------
 
+books	logs	web
 
 
 ==========
@@ -125,7 +137,7 @@ Use the command called cat on the file to show its contents.
 Describe what happened below.
 ----------
 
-
+ Paragraphs of text came up
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -136,8 +148,9 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+head pg1232.txt
 
-
+Title: The Prince
 
 ==========
 18. Using the same file again!
@@ -148,8 +161,18 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+tail pg1232.txt
 
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
+v314-ent-015:other student$ tail -n5 pg1232.txt
 
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 ==========
 19. Using the same file...
@@ -160,8 +183,9 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
-
-
+more pg1232.txt
+less pg1232.txt 
+space brings down a page while q takes that page off and returns you to the terminal.
 
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
@@ -169,14 +193,20 @@ Write the command that you used below.  Describe what spacebar and q does after 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
 
+I could use less to not have to view a lot of text, I could use more to view everything without having to use spacebar, I could use head to view the top of the file, tail to view the end of the file, and cat to see everything about the file page.
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 
+52639 words
+wc pg1232.txt
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+wc -l pg1232
+5063 lines
+
