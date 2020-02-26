@@ -12,6 +12,7 @@ Follow the instructions line-by-line.
 [NO OUTPUT]
 ----------
 ==========
+
 2. Find out if mtec1002-lab-02 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
 
 (See steps 1-8 in http://foureyes.github.io/mtec1002-spring2014/labs/03/lab-03-part-02-working-with-files.txt)
@@ -37,7 +38,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+foo.txt
 
 ==========
 7. Create another new file using touch.
@@ -45,7 +46,7 @@ Copy and paste the output below.
 $ touch bar.txt
 ----------
 
-
+bar.txt	foo.txt
 
 ==========
 8. List the files in this directory using the flag that gives the most details.
@@ -53,7 +54,8 @@ $ touch bar.txt
 Copy and paste the output below.
 ----------
 
-
+-rw-r--r--  1 student  staff  0 Feb 25 19:28 bar.txt
+-rw-r--r--  1 student  staff  0 Feb 25 19:28 foo.txt
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
