@@ -140,6 +140,8 @@ What commands did you use to do this?
 
 ./copy_to_backup.sh
 
+I'm done backing up
+
 ==========
 14. Verify that a backup folder was created in your home directory... with copies of the files present.
 
@@ -147,3 +149,18 @@ What commands did you use to do this?  Show the output.
 ----------
 cd ~ 
 ls
+
+Adlm				Wilson-MTEC2230-Spring2020
+Applications			backup
+Desktop				ipe.properties
+Documents			isus
+Downloads			mtec1002-lab-03
+Google.txt			mtec1002-lab-03.tar.gz
+Library				mtec1003javascript
+Movies				mtech1002
+Music				pymel.log
+Pictures			stuff
+Public				temp
+QLData				test
+Soulblase			xgen
+Things
